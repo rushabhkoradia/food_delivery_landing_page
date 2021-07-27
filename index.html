@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>repEAT</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar_brand">
+                <img src="assets/logo.png" alt="Company Logo" class="navbar_logo">
+            </div>
+            <div class="navbar_items">
+                <button class="nav_item button_primary">Order Food</button>
+            </div>
+        </nav>
+    </header>
+    <main class="container">
+        <!-- Hero section -->
+        <section class="hero_container">
+            <div class="hero_image_container">
+                <img src="assets/svg/heroShape.svg" alt="Hero Background Image" class="hero_image_shape">
+                <img src="assets/svg/herobgpattern.svg" alt="Hero Background Image" class="hero_image_pattern">
+                <img src="assets/hero.jpg" alt="Hero Image" class="hero_image">
+            </div>
+            <div class="hero_description">
+                <h1 class="hero_text">
+                    Order food from favourite restaurants near you !
+                </h1>
+                <button class="button_primary hero_button">Order Now</button>
+            </div>
+        </section>
+        <!-- Explore Menu -->
+        <section class="explore_menu_container">
+            <h1 class="explore_menu_text">Explore Our Menu</h1>
+            <div class="explore_menu_gradient_bg"></div>
+            <div class="explore_menu_lists">
+                <!-- Burger -->
+                <div class="food_card" id="burger_card">
+                    <div class="food_card_image_container">
+                        <img src="assets/burger.jpg" alt="Burger Image" class="food_image">
+                    </div>
+                    <div class="food_card_description">
+                        <h3 class="food_title">Burger</h3>
+                        <p>Burger King, Mcdonalds, Burger Place <span style="color: #FC5404">+3</span></p>
+                    </div>
+                </div>
+
+                <!-- Pizza -->
+                <div class="food_card" id="pizza_card">
+                    <div class="food_card_image_container">
+                        <img src="assets/pizza.jpg" alt="Burger Image" class="food_image">
+                    </div>
+                    <div class="food_card_description">
+                        <h3 class="food_title">Pizza</h3>
+                        <p>Pizza Hut, Dominos, PizzAah <span style="color: #FC5404">+3</span></p>
+                    </div>
+                </div>
+
+                <!-- Ice Cream -->
+                <div class="food_card" id="icecream_card">
+                    <div class="food_card_image_container">
+                        <img src="assets/iceCream.jpg" alt="Burger Image" class="food_image">
+                    </div>
+                    <div class="food_card_description">
+                        <h3 class="food_title">Ice Cream</h3>
+                        <p>Baskin Robbins, Naturals, Havmor, Kwality Walls <span style="color: #FC5404">+3</span></p>
+                    </div>
+                </div>
+            </div>
+            <button class="explore_button">View More</button>
+        </section>
+        <!-- Restaurants -->
+        <section class="restaurant_container">
+            <h4 class="restaurant_text">Order from 100s of restaurants</h4>
+            <div class="restaurant_images_container">
+                <div class="restaurant_list_row1">
+                    <img src="assets/restaurant.jpg" alt="Restaurant 1" class="restaurant_image1">
+                    <img src="assets/restaurant1.jpg" alt="Restaurant 2" class="restaurant_image2">
+                </div>
+                <div class="restaurant_list_row2">
+                    <img src="assets/restaurant2.jpg" alt="Restaurant 3" class="restaurant_image3">
+                    <img src="assets/restaurant3.jpg" alt="Restaurant 4" class="restaurant_image4">
+                </div>
+            </div>
+        </section>
+        <!-- Email -->
+        <section class="email_container">
+            <h3 class="email_text">Stay Updated</h3>
+            <div class="email_field_container">
+                <input type="email" name="email_field" placeholder="example123@email.com" id="email_field">
+                <button class="email_button">Get Updates</button>
+            </div>
+        </section>
+        <!-- Quote -->
+        <section class="quote_container">
+            <img src="assets/quote_image.jpg" alt="Quote Image" class="quote_image">
+            <h4 class="quote_text">To eat is a necessity, but to eat intelligently is an art.</h4>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="footer_container">
+        <div class="footer_info_container">
+            <img src="assets/logo.png" alt="Comapany Logo" class="footer_image">
+            <ul class="footer_list_container">
+                <li><a href="#" class="footer_text">Pricing</a></li>
+                <li><a href="#" class="footer_text">Terms & Conditions</a></li>
+                <li><a href="#" class="footer_text">About</a></li>
+                <li><a href="#" class="footer_text">Contact</a></li>
+            </ul>
+        </div>
+        <p class="footer_copyright_text">By continuing past this page, you agree to our <a href="#"
+                class="footer_copyright_link">Terms of Service</a>, <a href="#" class="footer_copyright_link">Cookie
+                Policy</a>, <a href="#" class="footer_copyright_link">Privacy Policy</a> and Content
+            Policies. All trademarks are properties of their respective owners. Rushabh Koradia © repEAT™ Ltd. All
+            rights
+            reserved.</p>
+    </footer>
+</body>
+
+</html>

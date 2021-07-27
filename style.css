@@ -1,0 +1,476 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Merriweather', serif;
+    background-color: #EBF2FF;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #FFFFFF;
+}
+
+.navbar_brand,
+.navbar_logo {
+    width: 100px;
+}
+
+.button_primary {
+    width: 140px;
+    height: 50px;
+    background-image: linear-gradient(to right, #F5CE62, #E43603, #FA7199, #E85A19);
+    background-size: 300% 100%;
+    color: #EEEEEE;
+    font-family: 'Merriweather', serif;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: medium;
+    box-shadow: 2px 2px 6px black;
+    transition: all .4s ease-in-out;
+}
+
+.button_primary:hover {
+    width: 160px;
+    cursor: pointer;
+    background-position: 100% 0;
+}
+
+.container {
+    max-width: 100%;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.hero_container {
+    margin-top: 1rem;
+}
+
+.hero_image_container {
+    position: relative;
+    width: 100%;
+}
+
+.hero_image_shape {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+}
+
+.hero_image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 15px 15px 40px -12px black;
+}
+
+.hero_text {
+    font-weight: 800;
+    font-size: 30px;
+    color: #1D3557;
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: 5px;
+}
+
+.hero_button {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.explore_menu_container {
+    margin-bottom: 60px;
+}
+
+.explore_menu_text {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 800;
+    color: #1D3557;
+}
+
+.food_card {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 5px 10px, rgba(0, 0, 0, 0.3) 0px 7px 15px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    margin-bottom: 30px;
+    border-radius: 15px;
+}
+
+.food_image {
+    display: block;
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+}
+
+.food_card_description {
+    padding: 15px;
+    background-color: #F9F9F9;
+    border-radius: 0 0 15px 15px;
+    color: #1D3557;
+}
+
+.explore_button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    color: #1D3557;
+    font-family: 'Merriweather', serif;
+    font-size: 15px;
+    background: none;
+    border: 2px solid #1D3557;
+    transition: all .4s ease-in-out;
+    padding: 10px;
+}
+
+.explore_button:hover {
+    border: 2px solid #1D3557;
+    letter-spacing: 10px;
+}
+
+.restaurant_container {
+    margin-bottom: 60px;
+}
+
+.restaurant_text {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800px;
+    color: #1D3557;
+    margin-bottom: 10px;
+}
+
+.restaurant_image1,
+.restaurant_image2,
+.restaurant_image3,
+.restaurant_image4 {
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    /* box-shadow: 20px 20px 30px -12px black; */
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 8px 15px, rgba(0, 0, 0, 0.3) 0px 7px 10px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.email_container {
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.email_text {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 800px;
+    color: #1D3557;
+    margin-bottom: 10px;
+}
+
+.email_field_container {
+    text-align: center;
+}
+
+#email_field {
+    border: 1px solid #1D3557;
+    font-weight: 800;
+    padding: 10px;
+    margin-right: 20px;
+}
+
+#email_field::placeholder {
+    color: #1D3557;
+    opacity: 0.7;
+}
+
+.email_button {
+    width: 130px;
+    height: 40px;
+    color: #EBF2FF;
+    font-weight: 500;
+    font-family: 'Merriweather', serif;
+    background: #1D3557;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    position: relative;
+}
+
+.email_button:hover {
+    border: none;
+    color: #1D3557;
+    letter-spacing: 3px;
+    background: none;
+}
+
+.email_button:before,
+.email_button:after {
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 0%;
+    border: 2px solid #1D3557;
+    z-index: -1;
+    transition: all 0.3s ease;
+}
+
+.email_button:before {
+    top: 0;
+    left: 0;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+}
+
+.email_button:after {
+    bottom: 0;
+    right: 0;
+    border-top-color: transparent;
+    border-left-color: transparent;
+}
+
+.email_button:hover:before,
+.email_button:hover:after {
+    border-color: #1D3557;
+    height: 100%;
+    width: 100%;
+}
+
+.quote_container {
+    width: 100%;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.quote_image {
+    width: 100%;
+    display: block;
+    height: auto;
+    opacity: 0.8;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 5px 10px, rgba(0, 0, 0, 0.3) 0px 7px 15px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.quote_text {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 25px;
+    font-weight: 400;
+    font-style: italic;
+    padding: 20px;
+}
+
+footer {
+    background-image: linear-gradient(to right, #ff512f 0%, #dd2476 51%, #ff512f 100%);
+    border-radius: 30px 30px 0 0;
+}
+
+.footer_info_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.footer_image {
+    filter: grayscale(1);
+    cursor: pointer;
+}
+
+.footer_list_container {
+    list-style-type: none;
+}
+
+.footer_text {
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    color: #EEEEEE;
+}
+
+.footer_text:hover {
+    color: #F9B208;
+}
+
+.footer_copyright_text {
+    padding: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    font-size: 0.5em;
+    font-weight: normal;
+    text-align: center;
+}
+
+.footer_copyright_link {
+    color: black;
+}
+
+@media (min-width: 768px) {
+    .navbar {
+        justify-content: space-between;
+        padding: 10px 30px;
+    }
+
+    .hero_container {
+        margin-top: 60px;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+
+    .hero_text {
+        text-align: left;
+        margin-bottom: 10px;
+    }
+
+    .hero_button {
+        display: inline;
+    }
+
+    .explore_menu_container {
+        position: relative;
+        margin-bottom: 60px;
+    }
+
+    .explore_menu_gradient_bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(to right, #FF512F 0%, #DD2476 51%, #FF512F 100%);
+        z-index: -3;
+        transform: skewY(-4deg);
+    }
+
+    .explore_menu_text {
+        padding-top: 20px;
+    }
+
+    .explore_menu_lists {
+        display: flex;
+        gap: 8px;
+        margin-top: 30px;
+        padding: 0 15px;
+        justify-content: center;
+    }
+
+    .food_image {
+        display: block;
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+    }
+
+    .food_card_description {
+        width: 100%;
+        height: 100px;
+        object-fit: cover;
+    }
+
+    .food_title {
+        text-align: center;
+    }
+
+    .food_card_description p {
+        font-family: 'Times New Roman', Times, serif;
+        margin-top: 10px;
+    }
+
+    .explore_button {
+        color: #EEEEEE;
+        border: 2px solid #EBF2FF;
+        transition: all .4s ease-in-out;
+    }
+
+    .explore_button:hover {
+        transform: skewY(-5deg);
+        color: #1D3557;
+    }
+
+    .restaurant_container {
+        width: 100%;
+        margin-top: 80px;
+    }
+
+    .restaurant_text {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .restaurant_list_row1 {
+        display: flex;
+        align-items: baseline;
+    }
+
+    .restaurant_list_row2 {
+        display: flex;
+    }
+
+    .restaurant_image1,
+    .restaurant_image2,
+    .restaurant_image3,
+    .restaurant_image4 {
+        width: 100%;
+        height: 100%;
+        margin: 5px;
+    }
+}
+
+.email_container {
+    width: 100%;
+}
+
+.email_text {
+    font-size: 35px;
+}
+
+.quote_text {
+    font-size: 40px;
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .navbar {
+        height: 90px;
+    }
+
+    .hero_container {
+        margin-top: 20px;
+    }
+
+    .hero_text {
+        font-size: 40px;
+    }
+
+    .hero_description {
+        width: 100%;
+    }
+
+    .explore_menu_lists {
+        gap: 25px;
+    }
+
+    .food_card {
+        height: 100%;
+    }
+
+    .restaurant_text {
+        font-size: 60px;
+    }
+}
